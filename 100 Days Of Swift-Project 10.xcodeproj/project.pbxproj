@@ -13,6 +13,7 @@
 		7799AB0D287368840069FBAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7799AB0B287368840069FBAF /* Main.storyboard */; };
 		7799AB0F287368850069FBAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7799AB0E287368850069FBAF /* Assets.xcassets */; };
 		7799AB12287368850069FBAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7799AB10287368850069FBAF /* LaunchScreen.storyboard */; };
+		7799AB1A28742EDC0069FBAF /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7799AB1928742EDC0069FBAF /* PersonCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7799AB0E287368850069FBAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7799AB11287368850069FBAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7799AB13287368850069FBAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7799AB1928742EDC0069FBAF /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				7799AB07287368840069FBAF /* SceneDelegate.swift */,
 				7799AB09287368840069FBAF /* ViewController.swift */,
 				7799AB0B287368840069FBAF /* Main.storyboard */,
+				7799AB1928742EDC0069FBAF /* PersonCell.swift */,
 				7799AB0E287368850069FBAF /* Assets.xcassets */,
 				7799AB10287368850069FBAF /* LaunchScreen.storyboard */,
 				7799AB13287368850069FBAF /* Info.plist */,
@@ -140,6 +143,7 @@
 			files = (
 				7799AB0A287368840069FBAF /* ViewController.swift in Sources */,
 				7799AB06287368840069FBAF /* AppDelegate.swift in Sources */,
+				7799AB1A28742EDC0069FBAF /* PersonCell.swift in Sources */,
 				7799AB08287368840069FBAF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
