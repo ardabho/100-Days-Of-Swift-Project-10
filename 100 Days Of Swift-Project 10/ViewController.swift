@@ -40,7 +40,26 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
         let person = personArray[indexPath.item]
+        
+        let alert = UIAlertController(title: "What would you like to do?", message: nil, preferredStyle: .actionSheet)
+        
+        alert.addAction(UIAlertAction(title: "Rename", style: .default, handler: { [weak self] _ in
+            self?.renamePerson(person: person)
+        }))
+
+        alert.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { [weak self] _ in
+            self?.personArray.remove(at: indexPath.item)
+            self?.collectionView.reloadData()
+            return
+        }))
+                
+        present(alert, animated: true)
+        
+}
+    
+    func renamePerson(person: Person) {
         
         let ac = UIAlertController(title: "Rename Person", message: nil, preferredStyle: .alert)
         
@@ -56,6 +75,7 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         }))
         
         present(ac, animated: true)
+
     }
     
     //MARK: - Custom Methods
